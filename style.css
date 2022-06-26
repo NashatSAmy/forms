@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@font-face {
+  font-family: flower;
+  src: url(./webfonts_FLOWER-Regular/FLOWER-Regular.ttf.woff);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffe9ed;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-content {
+  display: flex;
+  width: 80%;
+  height: 90%;
+}
+
+#side-banner {
+  position: relative;
+  flex: 1;
+  height: 100%;
+  background-image: url(./diana-serbichenko-AAH711cvBtI-unsplash.jpg);
+  background-size: cover;
+}
+
+#banner {
+  position: absolute;
+  top: 2%;
+  width: 100%;
+  text-align: center;
+  font-size: 4rem;
+  font-family: flower, "Indie Flower", cursive;
+  color: white;
+  background-color: #0000008f;
+}
+
+#banner span {
+  color: pink;
+}
+
+#cite {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  color: white;
+  font-size: 1.2rem;
+  background-color: #00000030;
+}
+
+#side-banner a {
+  color: white;
+}
+
+#form {
+  flex: 2;
+  height: 100%;
+  background-color: #ffe9ed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+#form h1 {
+  font-family: "Indie Flower", cursive;
+  font-size: 1.7rem;
+  margin: 0;
+  line-height: 1.5;
+  padding:20px 0 20px 40px ;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 65%;
+  width: 100%;
+}
+
+#wrapper {
+  display: flex;
+  width: 100%;
+  height: 60%;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3d4d9;
+  box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+}
+
+#leftSide, #rightSide {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding:20px 0 20px 40px ;
+  height: 100%;
+}
+
+label {
+  margin: 0;
+  font-family: 'Roboto', sans-serif; 
+  font-size: 0.8rem;
+  text-align: start;
+}
+
+input {
+  border: 1px solid #f3d4d9;
+  height: 30px;
+  background-color: white;
+  border-radius: 7px;
+  width: 300px;
+  box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,0.75);
+  margin: 0 0 15px 0;
+}
+
+input:focus {
+  border: 1px #1F51FF solid;
+  box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}
+
+button {
+  border: none;
+  border-radius: 15px;
+  height: 60px;
+  width: 300px;
+  margin:20px 0 0px 40px ;
+  font-size: 1.2rem;
+  font-family: 'Roboto', sans-serif; 
+  background-color: pink;
+  box-shadow: inset 0px 0px 63px 0px rgba(135,135,135,1);
+}
+
+form p {
+  font-size: 1.2rem;
+  padding:0px 0 00px 45px ;
+}
+
+form a {
+  color: pink;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif; ;
+}
+
+span {
+  color: pink;
+}
+
+
+.error {
+  border: 1px red solid;
+}
+
+.errorMessage::after{
+  content: "Password does not match!";
+  color: red;
+  font-size: 0.8rem;
+  padding-left: 10px;
+  position: absolute;
+  display: block;
+}

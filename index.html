@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./main.js" defer></script>
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <div id="main-content">
+      <section id="side-banner">
+        <p id="banner"><span>FLOWER</span> THORN</p>
+        <p id="cite">
+          Photo by
+          <a
+            href="https://unsplash.com/@diana_serbichenko?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            target="_blank"
+            >Diana Serbichenko</a
+          >
+          on
+          <a
+            href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            target="_blank"
+            >Unsplash</a
+          >
+        </p>
+      </section>
+      <section id="form">
+        <h1>
+          This is not a real online service! <br />
+          We can ensure you that your life will be amazing with us. <br />
+          <span>Join us</span> now and start receiving flowers from us every
+          morning to live a better life.
+        </h1>
+        <form action="#">
+          <div id="wrapper">
+            <div id="leftSide">
+              <h2>Let's do it</h2>
+              <label for="fisrtName">FIRST NAME</label>
+              <input type="text" id="fisrtName" name="firstName" />
+              <label for="email">EMAIL</label>
+              <input type="email" name="email" id="email" />
+              <label for="password">PASSWORD</label>
+              <div name="errormesg">
+                <input type="password" name="password" id="password" />
+              </div>
+            </div>
+            <div id="leftSide">
+              <h2 style="color: rgba(255, 192, 203, 0)">Let's do it</h2>
+              <label for="lastName">LAST NAME</label>
+              <input type="text" id="lastName" name="lastName" />
+              <label for="phoneNumber">PHONE NUMBER</label>
+              <input type="number" name="phoneNumber" id="phoneNumber" />
+              <label for="passwordConfirm">CONFIRM PASSWORD</label>
+              <div name="errormesg"><input
+                type="password"
+                name="passwordConfirm"
+                id="passwordConfirm"
+              /></div>
+            </div>
+          </div>
+          <button type="submit">Create Account</button>
+          <p>Already have an account? <a href="#">Log in</a></p>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
